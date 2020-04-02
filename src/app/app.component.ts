@@ -24,7 +24,8 @@ export class AppComponent {
     items: string[] = [];
     name: string;
 
-    constructor(private dataService: DataService) { }
+    constructor(private dataService: DataService) { } // build-in in Angular mechanism dependency injection allows
+    // to get object of service in constructor of component and use it then
 
     addItem(name: string) {
         this.dataService.addData(name);
