@@ -17,7 +17,7 @@ import { LogService } from './log.service';
             </table>
         </div>
     `,
-    providers: [ DataService, LogService ],
+    providers: [ DataService, LogService ], // we don't use LogService in AppComponent but we use here DataService  which depends on  LogService
 })
 
 export class AppComponent {

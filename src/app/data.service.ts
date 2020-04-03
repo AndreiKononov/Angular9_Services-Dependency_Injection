@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { LogService } from "./log.service";
 
 @Injectable()
-export class DataService {
+export class DataService { // to use DataService service in another services we have to apply decorator @Injectable() to service class
     private data: string[] = [ "Apple iPhone XR", "Samsung Galaxy S9",  "Nokia 9"];
     constructor(private logService: LogService) { }
 
